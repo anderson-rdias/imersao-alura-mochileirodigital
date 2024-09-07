@@ -47,6 +47,6 @@ Este projeto web, intitulado **Mochileiro Digital**, tem como objetivo auxiliar 
 
 > **Observação**: Este projeto serve como um ponto de partida para o desenvolvimento de uma aplicação web mais completa para auxiliar viajantes. As melhorias sugeridas podem ser implementadas gradualmente para aprimorar a funcionalidade e a experiência do usuário.
 
-- ** Fique a vontade para contribuir com o projeto, onde este é um projeto Open-Source e que pode ser dado fork para utilização do código-fonte.
+- Fique a vontade para contribuir com o projeto, onde este é um projeto Open-Source e que pode ser dado fork para utilização do código-fonte.
 
-- ** Meus singelos agradecimentos por todos conhecimentos passados durante a imersão pelos excelentes professores Rafaella Ballerini, Guilherme Lima e Luciano Martins. O curso como um todo foi excelente e bem explicativo, me ajudou muito no aprendizado destas ferramentas de busca, bem como em melhorias em boas práticas de códigos e em desenvolvimento JavaScript e estilizações em CSS. **
+- Meus singelos agradecimentos por todos conhecimentos passados durante a imersão pelos excelentes professores Rafaella Ballerini, Guilherme Lima e Luciano Martins. O curso como um todo foi excelente e bem explicativo, me ajudou muito no aprendizado destas ferramentas de busca, bem como em melhorias em boas práticas de códigos e em desenvolvimento JavaScript e estilizações em CSS. **
