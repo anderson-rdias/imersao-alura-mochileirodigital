@@ -11,7 +11,7 @@ function pesquisar() {
 
     // se campoPesquisa for uma string sem nada
     if (!campoPesquisa) {
-        section.innerHTML = "<p><b>O campo de busca não pode ser vazio ou conter apenas um caractere de espaço.</b></p>";
+        section.innerHTML = `<p class = "erro" ><b>O campo de busca não pode ser vazio ou conter apenas um caractere de espaço.</b></p>`;
         return;
     }
 
@@ -77,7 +77,7 @@ function pesquisar() {
     }
 
     if (!resultados) {
-        resultados = "<p><b>Nenhum país foi encontrado!</b></p>";
+        resultados = `<p class = "erro"><b>Nenhum país foi encontrado!</b></p>`;
     }
 
     // Atribui o HTML gerado para o conteúdo da seção, substituindo o conteúdo anterior

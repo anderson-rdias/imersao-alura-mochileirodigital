@@ -3,7 +3,7 @@
 
 /* Estiliza o corpo da página */
 body {
-    font-family: "Chakra Petch", sans-serif;
+    font-family: "Spinnaker", sans-serif;
     /* Define a fonte padrão */
     background-color: #DDDDDD;
     /* Cor de fundo da página */
@@ -22,7 +22,7 @@ body {
     padding: 0;
     /* Remove o padding padrão */
     margin-top: 150px;
-    background-image: url('https://img.freepik.com/free-vector/flat-design-travel-background_23-2149193475.jpg');
+    background-image: url('https://watermark.lovepik.com/photo/40015/6871.jpg_wh1200.jpg');
     background-position: left top, right bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +31,9 @@ body {
 
 /* Estiliza os títulos h1 */
 h1 {
-    font-size: 2.5rem;
+    margin-top: 120px;
+    font-size: 3.5rem;
+    font-weight: bold;
     /* Tamanho da fonte */
     color: #222831;
     /* Cor do texto */
@@ -42,13 +44,15 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2rem;
+    margin-top: 2rem;
+    font-size: 1.4rem;
     /* Tamanho da fonte */
-    color: #222831;
+    color: #0b6cfd;
     /* Cor do texto */
     text-align: center;
     /* Alinha o texto ao centro */
     padding-bottom: 50px;
+    font-weight: bold;
 }
 
 /* Estiliza as seções da página */
@@ -115,9 +119,9 @@ section button:hover {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-    width: 60rem;
+    width: 100rem;
     /* Largura máxima da caixa de resultados */
-    height: 46vh;
+    height: 80vh;
     /* Altura máxima da caixa de resultados */
     overflow-y: auto;
     /* Adiciona rolagem vertical se necessário */
@@ -131,7 +135,7 @@ section button:hover {
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-    background: #FFFFFF;
+    background: #e9e8e8;
     /* Cor de fundo dos itens */
     border-radius: 0.6rem;
     /* Borda arredondada */
@@ -143,9 +147,19 @@ section button:hover {
     /* Sombra leve */
 }
 
+/* Classe para o alerta de erro */
+.erro {
+    color: red;
+    font-weight: bold;
+    background-color: #ffdddd; /* Cor de fundo levemente rosa para destacar */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     /* Tamanho da fonte */
     color: #222831;
     /* Cor do texto */
@@ -188,7 +202,7 @@ section button:hover {
 /* Customização para setas do carrossel */
 .custom-carousel-control .carousel-control-prev-icon,
 .custom-carousel-control .carousel-control-next-icon {
-    background-color: black; /* Muda a cor de fundo das setas para preto */
+    background-color: rgb(0, 68, 255); /* Muda a cor de fundo das setas para preto */
     background-size: 100%, 100%; /* Garante que as setas estejam no tamanho certo */
     border-radius: 50%; /* Torna as setas circulares */
     width: 3rem; /* Ajuste de largura */
@@ -197,7 +211,7 @@ section button:hover {
 
 .custom-carousel-control:hover .carousel-control-prev-icon,
 .custom-carousel-control:hover .carousel-control-next-icon {
-    background-color: #333; /* Cor ligeiramente diferente no hover */
+    background-color: #0066ff; /* Cor ligeiramente diferente no hover */
 }
 
 .img-centralizada {
@@ -211,7 +225,7 @@ section button:hover {
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #F5F7F8;
+    background-color: #c0e7fa;
     /* Cor de fundo do rodapé */
     color: #45474B;
     /* Cor do texto */
