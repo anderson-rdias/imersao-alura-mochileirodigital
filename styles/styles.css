@@ -264,6 +264,11 @@ footer {
     list-style: none;
 }
 
+.github-icon {
+    font-size: 55px;
+    color: #000000;
+}
+
 .linkedin-icon {
     font-size: 55px;
     color: #0077B5;
