@@ -34,27 +34,52 @@ function pesquisar() {
 
         // se titulo includes campoPesquisa
         if (pais.includes(campoPesquisa) || pontosTuristicos.includes(campoPesquisa) || curiosidades.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
-            // Constrói o HTML para cada resultado, formatando os dados do objeto 'dado'
+            // Gera o HTML para o carrossel de imagens
+            let imagensHtml = '';
+            dado.imagens.forEach((imagem, index) => {
+                imagensHtml += `
+                  <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                    <img src="${imagem}" class="d-block img-centralizada" alt="Imagem do ponto turístico de ${dado.pais}">
+                  </div>
+                `;
+            });
+
+            // Constrói o HTML para cada resultado, incluindo o carrossel de imagens
             resultados += `
-          <div class="item-resultado">
-            <h2>
-              <a href="#" target="_blank">${dado.pais}</a>
-            </h2>
-            <p class="descricao-meta"><b>Curiosidades: </b>${dado.curiosidades}</p>
-            <p class="descricao-meta"><b>Pontos Turísticos: </b>${dado.pontosTuristicos}</p>
-            <p class="descricao-meta"><b>Moeda Local: </b>${dado.moeda}</p>
-            <p class="descricao-meta"><b>Cotação Atual: </b>${dado.cotacao}</p>
-            <p class="descricao-meta"><b>Temperatura Média: </b>${dado.temperaturaMedia}</p>
-            <p class="descricao-meta"><b>Gasto Semanal: </b>${dado.gastoSemanal}</p>
-            <a href="${dado.link}" target="_blank">Mais informações</a>
-          </div>
-        `;
+              <div class="item-resultado">
+                <h2>
+                  ${dado.pais}
+                </h2>
+                <div id="carousel-${dado.pais.replace(/\s/g, '')}" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    ${imagensHtml}
+                  </div>
+                  <a class="carousel-control-prev custom-carousel-control" href="#carousel-${dado.pais.replace(/\s/g, '')}" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next custom-carousel-control" href="#carousel-${dado.pais.replace(/\s/g, '')}" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <p class="descricao-meta"><b>Curiosidades: </b>${dado.curiosidades}</p>
+                <p class="descricao-meta"><b>Pontos Turísticos: </b>${dado.pontosTuristicos}</p>
+                <p class="descricao-meta"><b>Comidas Típicas: </b>${dado.comidasTipicas}</p>
+                <p class="descricao-meta"><b>Moeda Local: </b>${dado.moeda}</p>
+                <p class="descricao-meta"><b>Cotação Atual: </b>${dado.cotacao}</p>
+                <p class="descricao-meta"><b>Temperatura Média: </b>${dado.temperaturaMedia}</p>
+                <p class="descricao-meta"><b>Gasto Semanal: </b>${dado.gastoSemanal}</p>
+                <a href="${dado.link}" target="_blank" class = "mais-informacoes">Mais informações</a>
+              </div>
+            `;
         }
     }
 
     if (!resultados) {
         resultados = "<p><b>Nenhum país foi encontrado!</b></p>";
     }
+
     // Atribui o HTML gerado para o conteúdo da seção, substituindo o conteúdo anterior
     section.innerHTML = resultados;
 }

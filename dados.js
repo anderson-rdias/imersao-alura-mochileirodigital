@@ -7,7 +7,13 @@ let dados = [
     temperaturaMedia: "Varia entre 5°C e 25°C",
     gastoSemanal: "R$ 3.000 - R$ 5.000",
     curiosidades: "Lar do deserto mais seco do mundo (Atacama) e da Cordilheira dos Andes.",
-    tags: "Chile Cordilheiras Andes Santiago Atacama"
+    tags: "Chile Cordilheiras Andes Santiago Atacama",
+    comidasTipicas: "Empanadas, Cazuela, Completo, Curanto, Pastel de Choclo",
+    link: "https://pt.wikipedia.org/wiki/Chile",
+    imagens: [
+      "https://oficinadeinverno.com.br/cdn/shop/articles/oficina-de-inverno-deserto-do-atacama-noite-capa.jpg?v=1660309244",
+      "https://www.viviantelles.com.br/wp-content/uploads/2019/01/Torres-del-paine-chile-2.jpg"
+    ]
   },
 
   {
@@ -18,7 +24,9 @@ let dados = [
     temperaturaMedia: "Varia entre 5°C e 25°C",
     gastoSemanal: "R$ 2.500 - R$ 4.000",
     curiosidades: "Tango, futebol e mate são símbolos da cultura argentina.",
-    tags: "Buenos Aires Cataratas Boca Juniors River Plate"
+    tags: "Buenos Aires Cataratas Boca Juniors River Plate",
+    comidasTipicas: "Asado, Empanadas, Chimichurri, Milanesa, Dulce de Leche",
+    link: "https://pt.wikipedia.org/wiki/Argentina",
   },
 
   {
@@ -29,7 +37,9 @@ let dados = [
     temperaturaMedia: "Varia entre -10°C e 35°C",
     gastoSemanal: "R$ 4.000 - R$ 6.000",
     curiosidades: "A China é o país mais populoso do mundo e tem uma história milenar.",
-    tags: "China Grande Muralha Cidade Proibida Xangai Beijing"
+    tags: "China Grande Muralha Cidade Proibida Xangai Beijing",
+    comidasTipicas: "Pato à Pequim, Dim Sum, Hot Pot, Chow Mein, Baozi",
+    link: "https://pt.wikipedia.org/wiki/China",
   },
 
   {
@@ -40,7 +50,9 @@ let dados = [
     temperaturaMedia: "Varia entre -5°C e 30°C",
     gastoSemanal: "R$ 3.500 - R$ 5.500",
     curiosidades: "Conhecida por sua cultura pop (K-pop) e tecnologia avançada.",
-    tags: "Coreia do Sul Seul K-pop Tecnologia Jeju Busan"
+    tags: "Coreia do Sul Seul K-pop Tecnologia Jeju Busan",
+    comidasTipicas: "Kimchi, Bibimbap, Bulgogi, Tteokbokki, Samgyeopsal",
+    link: "https://pt.wikipedia.org/wiki/Coreia_do_Sul",
   },
 
   {
@@ -51,7 +63,9 @@ let dados = [
     temperaturaMedia: "Varia entre -5°C e 30°C",
     gastoSemanal: "R$ 4.500 - R$ 7.000",
     curiosidades: "Mistura única de tradição e modernidade, famoso por sua culinária e cultura samurai.",
-    tags: "Japão Tóquio Kyoto Monte Fuji Anime Samurais"
+    tags: "Japão Tóquio Kyoto Monte Fuji Anime Samurais",
+    comidasTipicas: "Sushi, Ramen, Tempura, Okonomiyaki, Sashimi",
+    link: "https://pt.wikipedia.org/wiki/Jap%C3%A3o",
   },
 
   {
@@ -62,7 +76,9 @@ let dados = [
     temperaturaMedia: "Varia entre 0°C e 30°C",
     gastoSemanal: "R$ 5.000 - R$ 8.000",
     curiosidades: "Berço do Império Romano e do Renascimento, famosa por sua culinária.",
-    tags: "Itália Roma Veneza Florença Coliseu Pizza"
+    tags: "Itália Roma Veneza Florença Coliseu Pizza",
+    comidasTipicas: "Pizza, Pasta, Risotto, Lasagna, Tiramisu",
+    link: "https://pt.wikipedia.org/wiki/It%C3%A1lia",
   },
 
   {
@@ -73,7 +89,9 @@ let dados = [
     temperaturaMedia: "Varia entre 5°C e 35°C",
     gastoSemanal: "R$ 4.500 - R$ 7.500",
     curiosidades: "País com rica história, famoso por sua arquitetura, flamenco e culinária.",
-    tags: "Espanha Barcelona Madri Flamenco Gaudí La Sagrada Família"
+    tags: "Espanha Barcelona Madri Flamenco Gaudí La Sagrada Família",
+    comidasTipicas: "Paella, Tapas, Gazpacho, Tortilla, Española, Churros",
+    link: "https://pt.wikipedia.org/wiki/Espanha",
   },
 
   {
@@ -85,6 +103,8 @@ let dados = [
     gastoSemanal: "R$ 4.000 - R$ 6.500",
     curiosidades: "Famoso por seus vinhos, Fado e a história dos descobrimentos marítimos.",
     tags: "Portugal Lisboa Porto Algarve Fado Vinhos",
+    comidasTipicas: "Bacalhau à Brás, Pastel de Nata, Francesinha, Caldo Verde, Alheira",
+    link: "https://pt.wikipedia.org/wiki/Portugal",
   },
 
   {
@@ -95,7 +115,9 @@ let dados = [
     temperaturaMedia: "Varia entre 10°C e 40°C",
     gastoSemanal: "R$ 3.000 - R$ 5.000",
     curiosidades: "Lar das antigas pirâmides e rica herança faraônica.",
-    tags: "Egito Pirâmides Cairo Luxor Rio Nilo Faraós"
+    tags: "Egito Pirâmides Cairo Luxor Rio Nilo Faraós",
+    comidasTipicas: "Koshari, Ful Medames, Molokhia, Taameya, Mahshi",
+    link: "https://pt.wikipedia.org/wiki/Egito",
   },
 
   {
@@ -106,7 +128,9 @@ let dados = [
     temperaturaMedia: "Varia entre 10°C e 30°C",
     gastoSemanal: "R$ 3.500 - R$ 6.000",
     curiosidades: "Diversidade cultural e natural, famosa por seus safáris e paisagens.",
-    tags: "África do Sul Cidade do Cabo Joanesburgo Safári Kruger"
+    tags: "África do Sul Cidade do Cabo Joanesburgo Safári Kruger",
+    comidasTipicas: "Biltong, Bobotie, Bunny Chow, Boerewors, Malva,Pudding",
+    link: "https://pt.wikipedia.org/wiki/%C3%81frica_do_Sul",
   },
 
   {
@@ -117,7 +141,9 @@ let dados = [
     temperaturaMedia: "Varia entre 10°C e 35°C",
     gastoSemanal: "R$ 6.000 - R$ 9.000",
     curiosidades: "Famosa por suas paisagens naturais e vida selvagem única.",
-    tags: "Austrália Sydney Grande Barreira Corais Opera House Canguru"
+    tags: "Austrália Sydney Grande Barreira Corais Opera House Canguru",
+    comidasTipicas: "Vegemite, Lamington, Pavlova, Meat Pie, Barramundi",
+    link: "https://pt.wikipedia.org/wiki/Austr%C3%A1lia",
   },
 
   {
@@ -128,7 +154,9 @@ let dados = [
     temperaturaMedia: "Varia entre 5°C e 25°C",
     gastoSemanal: "R$ 5.000 - R$ 8.000",
     curiosidades: "Conhecida por suas paisagens de tirar o fôlego, como os cenários de 'O Senhor dos Anéis'.",
-    tags: "Nova Zelândia Auckland Queenstown Rotorua Natureza Hobbit"
+    tags: "Nova Zelândia Auckland Queenstown Rotorua Natureza Hobbit",
+    comidasTipicas: "Hangi, Pavlova, Kiwi, Fish and Chips, Roast Lamb",
+    link: "https://pt.wikipedia.org/wiki/Nova_Zel%C3%A2ndia",
   },
 
   {
@@ -139,7 +167,9 @@ let dados = [
     temperaturaMedia: "Varia entre -10°C e 35°C",
     gastoSemanal: "R$ 7.000 - R$ 12.000",
     curiosidades: "País de grande diversidade cultural e natural, centro econômico global.",
-    tags: "Estados Unidos Nova York Los Angeles Grand Canyon Hollywood"
+    tags: "Estados Unidos Nova York Los Angeles Grand Canyon Hollywood",
+    comidasTipicas: "Hambúrguer, Hot Dog, Mac and Cheese, BBQ Ribs, Apple Pie",
+    link: "https://pt.wikipedia.org/wiki/Estados_Unidos",
   },
 
   {
@@ -150,6 +180,8 @@ let dados = [
     temperaturaMedia: "Varia entre 10°C e 35°C",
     gastoSemanal: "R$ 3.000 - R$ 5.500",
     curiosidades: "Famoso por sua cultura vibrante, gastronomia e história pré-colombiana.",
-    tags: "México Cidade do México Cancún Chichen Itzá Mariachi Tacos"
+    tags: "México Cidade do México Cancún Chichen Itzá Mariachi Tacos",
+    comidasTipicas: "Nachos, Tacos, Burritos, Churros, Enchiladas",
+    link: "https://pt.wikipedia.org/wiki/M%C3%A9xico",
   }
-];
+]

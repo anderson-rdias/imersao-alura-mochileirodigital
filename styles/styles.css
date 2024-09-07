@@ -68,8 +68,8 @@ section input {
     width: 30rem;
     /* Largura dos inputs */
     border: none;
-    border-style:ridge;
-    border-radius: 1.2rem;
+    /* border-style:ridge; */
+    border-radius:0%;
     /* Remove a borda padrão */
     padding: 1rem;
     /* Espaçamento interno */
@@ -149,13 +149,15 @@ section button:hover {
     /* Tamanho da fonte */
     color: #222831;
     /* Cor do texto */
+
+    margin-bottom: 0; /* Remove o espaçamento inferior */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
     text-decoration: none;
     /* Remove o sublinhado padrão dos links */
-    color: #30475E;
+    color: #007ffd;
     /* Cor do texto dos links */
 }
 
@@ -173,6 +175,39 @@ section button:hover {
     margin-top: 0;
     /* Margem acima e abaixo */
 }
+  
+  .mais-informacoes:hover {
+    color: orange; /* Muda a cor para laranja ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  }
+
+.item-resultado .carousel {
+    margin-bottom: 30px; /* Adiciona um espaçamento inferior */
+}
+
+/* Customização para setas do carrossel */
+.custom-carousel-control .carousel-control-prev-icon,
+.custom-carousel-control .carousel-control-next-icon {
+    background-color: black; /* Muda a cor de fundo das setas para preto */
+    background-size: 100%, 100%; /* Garante que as setas estejam no tamanho certo */
+    border-radius: 50%; /* Torna as setas circulares */
+    width: 3rem; /* Ajuste de largura */
+    height: 3rem; /* Ajuste de altura */
+}
+
+.custom-carousel-control:hover .carousel-control-prev-icon,
+.custom-carousel-control:hover .carousel-control-next-icon {
+    background-color: #333; /* Cor ligeiramente diferente no hover */
+}
+
+.img-centralizada {
+    width: auto; /* Mantém a proporção original da imagem */
+    max-width: 100%; /* Limita a largura ao máximo do container */
+    max-height: 200px; /* Define uma altura máxima */
+    display: block; /* Faz a imagem se comportar como um bloco */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
 
 /* Estiliza o rodapé da página */
 footer {
