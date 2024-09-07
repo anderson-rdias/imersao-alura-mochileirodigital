@@ -2,7 +2,7 @@
 
 ## Para Executar Este Projeto:
 
-- ** Acesse: http://andersonteste.educacao.ws/
+-  **Acesse:** http://andersonteste.educacao.ws/
 
 Este projeto web, intitulado **Mochileiro Digital**, tem como objetivo auxiliar viajantes na pesquisa de destinos. E foi feito com base no aprendizado durante as aulas do projeto de **Imersão da Alura + Google Gemini**. Ao inserir o nome de um país no campo de busca, o usuário obtém informações detalhadas sobre o local, incluindo:
 
